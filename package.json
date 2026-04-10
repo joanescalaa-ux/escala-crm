@@ -1,0 +1,38 @@
+{
+  "name": "escala-crm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "pg": "^8.11.3",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.2.4",
+    "canvas-confetti": "^1.9.3",
+    "recharts": "^2.12.7",
+    "lucide-react": "^0.468.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/pg": "^8.10.9",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/uuid": "^9.0.8",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "eslint": "^8",
+    "eslint-config-next": "15.1.7"
+  }
+}
