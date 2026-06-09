@@ -127,7 +127,7 @@ export default function OnboardingPage() {
 
   const val = (key: string, fallback: string | boolean = '') => {
     if (form[key] !== undefined) return form[key]
-    return (data as Record<string, unknown>)[key] ?? fallback
+return (data as unknown as Record<string, unknown>)[key] ?? fallback
   }
 
   const validate = (paso: number): boolean => {
