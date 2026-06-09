@@ -2,45 +2,38 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import {
-  FileText, LayoutDashboard, Users, BarChart2, BookOpen, Trophy,
-  User, Settings, LogOut, Plus, ChevronRight
-} from 'lucide-react'
 
 interface SidebarProps {
-  user: {
-    nombre: string
-    rol: string
-    email: string
-  }
+  user: { nombre: string; rol: string; email: string }
 }
 
-const clienteNavItems = [
-  { href: '/reporte', label: 'Reporte Diario', icon: FileText },
-  { href: '/panel', label: 'Panel de Control', icon: LayoutDashboard },
-  { href: '/leads', label: 'Pipeline de Leads', icon: Users },
-  { href: '/contenido', label: 'Contenido', icon: BookOpen },
-  { href: '/ranking', label: 'Ranking', icon: Trophy },
+const clienteNav = [
+  { href: '/programa', label: 'Mi Programa', icon: 'ti-map-2' },
+  { href: '/reporte', label: 'Reporte diario', icon: 'ti-file-text' },
+  { href: '/panel', label: 'Panel de métricas', icon: 'ti-chart-bar' },
+  { href: '/leads', label: 'Pipeline de leads', icon: 'ti-users' },
+  { href: '/contenido', label: 'Contenido', icon: 'ti-video' },
+  { href: '/ranking', label: 'Ranking', icon: 'ti-trophy' },
 ]
 
-const adminNavItems = [
-  { href: '/reporte', label: 'Reporte Diario', icon: FileText },
-  { href: '/panel', label: 'Panel de Control', icon: LayoutDashboard },
-  { href: '/leads', label: 'Pipeline de Leads', icon: Users },
-  { href: '/contenido', label: 'Contenido', icon: BookOpen },
-  { href: '/ranking', label: 'Ranking', icon: Trophy },
+const adminNav = [
+  { href: '/reporte', label: 'Reporte diario', icon: 'ti-file-text' },
+  { href: '/panel', label: 'Panel de métricas', icon: 'ti-chart-bar' },
+  { href: '/leads', label: 'Pipeline de leads', icon: 'ti-users' },
+  { href: '/contenido', label: 'Contenido', icon: 'ti-video' },
+  { href: '/ranking', label: 'Ranking', icon: 'ti-trophy' },
 ]
 
-const adminOnlyItems = [
-  { href: '/admin', label: 'Vista General', icon: BarChart2 },
-  { href: '/admin/clientes', label: 'Clientes', icon: Users },
+const adminOnlyNav = [
+  { href: '/admin', label: 'Vista general', icon: 'ti-layout-dashboard' },
+  { href: '/admin/clientes', label: 'Clientes', icon: 'ti-users-group' },
 ]
 
 export default function Sidebar({ user }: SidebarProps) {
   const pathname = usePathname()
   const router = useRouter()
   const isAdmin = user.rol === 'admin'
-  const navItems = isAdmin ? adminNavItems : clienteNavItems
+  const nav = isAdmin ? adminNav : clienteNav
 
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' })
@@ -55,182 +48,106 @@ export default function Sidebar({ user }: SidebarProps) {
   }
 
   return (
-    <aside
-      className="flex flex-col h-screen w-[260px] flex-shrink-0"
-      style={{ backgroundColor: '#0F172A' }}
-    >
-      {/* Logo */}
-      <div className="flex flex-col justify-center px-6" style={{ height: 64 }}>
-        <div
-          className="text-white"
-          style={{ fontSize: 13, fontWeight: 300, letterSpacing: '0.3em' }}
-        >
-          ESCALA
-        </div>
-        <div
-          style={{ color: 'rgba(255,255,255,0.35)', fontSize: 9, marginTop: 2 }}
-        >
-          Joan Escala Consulting
+    <aside style={{
+      width: 220,
+      flexShrink: 0,
+      backgroundColor: '#0A0A0A',
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100vh',
+    }}>
+      <div style={{ padding: '24px 20px 20px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{
+            width: 30, height: 30, backgroundColor: '#F8F284',
+            borderRadius: 7, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+          }}>
+            <span style={{ fontSize: 13, fontWeight: 900, color: '#0A0A0A', fontFamily: 'Sora, sans-serif' }}>E</span>
+          </div>
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.12em' }}>ESCALA</div>
+            <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.05em' }}>Maestría de Escala</div>
+          </div>
         </div>
       </div>
 
-      {/* Divider */}
-      <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }} />
+      <div style={{ height: '0.5px', background: 'rgba(255,255,255,0.08)', margin: '0 20px 16px' }} />
 
-      {/* Nav */}
-      <nav className="flex-1 overflow-y-auto pt-2">
-        {navItems.map((item) => {
-          const Icon = item.icon
+      <nav style={{ flex: 1, overflowY: 'auto', padding: '0 10px', display: 'flex', flexDirection: 'column', gap: 2 }}>
+        {nav.map(item => {
           const active = isActive(item.href)
           return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="flex items-center gap-3 px-6 w-full transition-all"
-              style={{
-                height: 48,
-                backgroundColor: active ? 'rgba(255,255,255,0.1)' : 'transparent',
-                color: active ? '#ffffff' : 'rgba(255,255,255,0.45)',
-                fontSize: 13,
-                fontWeight: active ? 600 : 300,
-                letterSpacing: '0.06em',
-                textDecoration: 'none',
-              }}
-              onMouseEnter={(e) => {
-                if (!active) {
-                  e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.08)'
-                  e.currentTarget.style.color = 'rgba(255,255,255,0.8)'
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!active) {
-                  e.currentTarget.style.backgroundColor = 'transparent'
-                  e.currentTarget.style.color = 'rgba(255,255,255,0.45)'
-                }
-              }}
+            <Link key={item.href} href={item.href} style={{
+              display: 'flex', alignItems: 'center', gap: 10,
+              padding: '9px 12px', borderRadius: 8, textDecoration: 'none',
+              backgroundColor: active ? 'rgba(248,242,132,0.08)' : 'transparent',
+              borderLeft: active ? '2px solid #F8F284' : '2px solid transparent',
+              transition: 'all 0.15s',
+            }}
+              onMouseEnter={e => { if (!active) e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)' }}
+              onMouseLeave={e => { if (!active) e.currentTarget.style.backgroundColor = 'transparent' }}
             >
-              <Icon size={16} />
-              {item.label}
+              <i className={`ti ${item.icon}`} style={{ fontSize: 16, color: active ? '#F8F284' : 'rgba(255,255,255,0.4)' }} aria-hidden="true" />
+              <span style={{ fontSize: 13, color: active ? '#F8F284' : 'rgba(255,255,255,0.45)', fontWeight: active ? 500 : 400 }}>
+                {item.label}
+              </span>
             </Link>
           )
         })}
 
-        {/* Admin section */}
         {isAdmin && (
           <>
-            <div
-              className="px-6 pt-4 pb-1"
-              style={{ fontSize: 9, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.25)', textTransform: 'uppercase' }}
-            >
+            <div style={{ height: '0.5px', background: 'rgba(255,255,255,0.08)', margin: '12px 2px 10px' }} />
+            <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.2)', letterSpacing: '0.15em', textTransform: 'uppercase', padding: '0 12px 6px' }}>
               Consultoría
             </div>
-            {adminOnlyItems.map((item) => {
-              const Icon = item.icon
+            {adminOnlyNav.map(item => {
               const active = isActive(item.href)
               return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="flex items-center gap-3 px-6 w-full transition-all"
-                  style={{
-                    height: 48,
-                    backgroundColor: active ? 'rgba(255,255,255,0.1)' : 'transparent',
-                    color: active ? '#ffffff' : 'rgba(255,255,255,0.45)',
-                    fontSize: 13,
-                    fontWeight: active ? 600 : 300,
-                    letterSpacing: '0.06em',
-                    textDecoration: 'none',
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!active) {
-                      e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.08)'
-                      e.currentTarget.style.color = 'rgba(255,255,255,0.8)'
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!active) {
-                      e.currentTarget.style.backgroundColor = 'transparent'
-                      e.currentTarget.style.color = 'rgba(255,255,255,0.45)'
-                    }
-                  }}
+                <Link key={item.href} href={item.href} style={{
+                  display: 'flex', alignItems: 'center', gap: 10,
+                  padding: '9px 12px', borderRadius: 8, textDecoration: 'none',
+                  backgroundColor: active ? 'rgba(248,242,132,0.08)' : 'transparent',
+                  borderLeft: active ? '2px solid #F8F284' : '2px solid transparent',
+                  transition: 'all 0.15s',
+                }}
+                  onMouseEnter={e => { if (!active) e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)' }}
+                  onMouseLeave={e => { if (!active) e.currentTarget.style.backgroundColor = 'transparent' }}
                 >
-                  <Icon size={16} />
-                  {item.label}
+                  <i className={`ti ${item.icon}`} style={{ fontSize: 16, color: active ? '#F8F284' : 'rgba(255,255,255,0.4)' }} aria-hidden="true" />
+                  <span style={{ fontSize: 13, color: active ? '#F8F284' : 'rgba(255,255,255,0.45)', fontWeight: active ? 500 : 400 }}>
+                    {item.label}
+                  </span>
                 </Link>
               )
             })}
-
-            {/* Add Client Button */}
-            <div className="px-2 mt-3">
-              <Link
-                href="/admin/clientes?new=1"
-                className="flex items-center justify-center gap-2 w-full transition-all"
-                style={{
-                  height: 36,
-                  backgroundColor: 'rgba(255,255,255,0.08)',
-                  border: '1px solid rgba(255,255,255,0.15)',
-                  color: '#ffffff',
-                  fontSize: 11,
-                  fontWeight: 400,
-                  letterSpacing: '0.1em',
-                  textDecoration: 'none',
-                  textTransform: 'uppercase',
-                }}
-              >
-                <Plus size={12} />
-                Añadir Cliente
-              </Link>
-            </div>
           </>
         )}
       </nav>
 
-      {/* Footer */}
-      <div
-        className="flex items-center gap-3 px-4"
-        style={{ height: 56, borderTop: '1px solid rgba(0,0,0,0.15)' }}
-      >
-        {/* Avatar */}
-        <div
-          className="flex items-center justify-center flex-shrink-0 rounded-full text-white text-sm font-medium"
-          style={{
-            width: 28,
-            height: 28,
-            backgroundColor: 'rgba(255,255,255,0.12)',
-            fontSize: 12,
-          }}
-        >
-          {user.nombre.charAt(0).toUpperCase()}
+      <div style={{ height: '0.5px', background: 'rgba(255,255,255,0.08)', margin: '0 20px' }} />
+      <div style={{ padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
+        <div style={{
+          width: 28, height: 28, borderRadius: '50%', backgroundColor: '#F8F284',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+        }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: '#0A0A0A' }}>
+            {user.nombre?.charAt(0).toUpperCase()}
+          </span>
         </div>
-
-        {/* User info */}
-        <div className="flex-1 min-w-0">
-          <div className="text-white truncate" style={{ fontSize: 13 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: 12, color: '#fff', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             {user.nombre}
           </div>
-          <div className="truncate" style={{ color: 'rgba(255,255,255,0.4)', fontSize: 11 }}>
-            {isAdmin ? 'Consultor' : 'Cliente'}
+          <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.3)' }}>
+            {isAdmin ? 'Admin' : 'Cliente'}
           </div>
         </div>
-
-        {/* Profile link */}
-        <Link
-          href="/perfil"
-          className="flex-shrink-0 transition-opacity hover:opacity-100"
-          style={{ color: 'rgba(255,255,255,0.3)' }}
-          title="Perfil"
-        >
-          <Settings size={14} />
-        </Link>
-
-        {/* Logout */}
-        <button
-          onClick={handleLogout}
-          className="flex-shrink-0 transition-opacity hover:opacity-100"
-          style={{ color: 'rgba(255,255,255,0.3)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-          title="Cerrar sesión"
-        >
-          <LogOut size={14} />
+        <button onClick={handleLogout} title="Cerrar sesión"
+          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, color: 'rgba(255,255,255,0.25)', flexShrink: 0 }}
+          onMouseEnter={e => (e.currentTarget.style.color = '#F8F284')}
+          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.25)')}>
+          <i className="ti ti-logout" style={{ fontSize: 16 }} aria-hidden="true" />
         </button>
       </div>
     </aside>
