@@ -1,80 +1,184 @@
 # 04 · SOLAPAMIENTOS Y AGUJEROS
 
-> **EXTRACCIÓN PARCIAL — 1 de 4 fuentes disponibles.**
-> La tabla cruzada pedida tiene 6 columnas: los 4 candidatos + tú + tu socio. **Solo se puede rellenar una: la tuya**, y solo con lo que dice el SOP.
-> Las 4 columnas de candidatos requieren las tres transcripciones, que no existen en la carpeta. Ver `00-FUENTES-QUE-FALTAN.md`.
+> **Fuentes:** `[F1]` Dante + ingeniero IA · `[F2]` Daniel · `[F3]` consultor growth (**cortado a los 30 min**) · `[SOP]`.
+> **Leyenda:** 🔴 = función cubierta por **2 o más** a la vez (dinero duplicado) · ⚫ = **agujero**, no la cubre nadie · ✅ = cubierta por uno solo · ⚠️ = cubierta con conflicto de criterio.
 >
-> **Fuente:** `SOP_Sprint_14_Dias_Escala.md` v1.1, ID `1RxXR1z3E8VMc2nJXbyigFlnRck9fFJnWHJStvePhoWo`, modificado 24/08/2026 17:36.
-> **No he marcado ningún solapamiento en rojo**, porque un solapamiento exige dos ocupantes y aquí solo hay uno identificable. Los agujeros sí son visibles desde ya, y están marcados.
+> ⚠️ La columna del consultor de growth está incompleta: su transcripción se corta a los 30 minutos.
 
 ---
 
-## TABLA CRUZADA — estado actual
+## TABLA CRUZADA
 
-Leyenda: 🔴 agujero (nadie lo cubre) · ⬜ pendiente de las transcripciones · ✅ cubierto y documentado
-
-| Función | Yo (Joan) — según SOP | Mi socio | Cand. 1 (Dante) | Cand. 2 (ing. IA) | Cand. 3 (Daniel) | Cand. 4 (consultor growth) |
+| Función | **Dante** | **Ingeniero IA** | **Daniel** | **Consultor growth** | **Joan** | **El socio** |
 |---|---|---|---|---|---|---|
-| **Ideación de contenido** | Cubierto por activos ya construidos, no por una persona: 12 guiones de reels + 8 temas de YouTube ya escritos [SOP §0.7, §2.1.2] | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Guionizado** | Parcial. Construido: VSL, 12 reels, YT #1 [SOP §0.7]. Tuyo: «⬜ **SOLO TÚ** · 17\_YT\_Guion\_02.md» [SOP §D11·B1] y rellenar los corchetes [SOP §0.7] | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Edición** | VSL: «⬜ **SOLO TÚ** · VSL\_Escala\_v1.mp4 — 12–13 minutos, subtitulado» [SOP §D4·B2]. **Reels: 🔴 nadie.** Solo existe el brief para enviar a un tercero [SOP §D6·B3] | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Dirección de marca** | 🔴 **Nadie.** Existen especificaciones (paleta \#0A0A0A / \#F5D800, tipografías Anton + Montserrat [SOP §A.3, §D2·B3]) pero ninguna persona asignada a sostenerlas | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Setting** | Rol definido en 8 páginas [SOP §Módulo 4, 15\_SOP\_Setter.pdf] pero **sin persona**: el D9 se titula «RECLUTAMIENTO DE SETTER» [SOP §D9]. Pago: «por llamada presentada, nunca por agendada» — **importe `NO DICHO`** | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Closing** | ✅ Tú, en exclusiva: «LLAMADA DE DIAGNÓSTICO 45 min (Joan)» [SOP §0.5]; «Cierre: Stripe → DocuSign → CRM \| Joan» [SOP §3.3.1] | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Tracking / datos** | Repartido: el setter rellena el tracker diario [SOP §4.6]; tú escribes «⬜ **SOLO TÚ**» las auditorías 16\_Auditoria\_48h (D10), 18\_QA\_Llamadas (D12) y 20\_Informe\_Sprint (D14) | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Desarrollo** | Tú: «Configurar ManyChat, Calendly, Stripe, DocuSign, Make.com y la página del VSL \| **Requiere tus credenciales**» [SOP §0.7]. Escala CRM ya existe [SOP §0.2]. **La herramienta de la página del VSL: `NO DICHA`** | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Fulfillment de clientes** | 🔴 **Agujero mayor.** Ver abajo | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Publicidad** | Tú: «⬜ **SOLO TÚ** · crear las 4 audiencias personalizadas y montar la campaña con los 3 ad sets» [SOP §D7·B3]. Presupuesto 15 €/día, techo 25 €/día [SOP §A.2, §D13·B3] | `SIN EVIDENCIA` | ⬜ | ⬜ | ⬜ | ⬜ |
-
-**Nota sobre los nombres de las columnas de candidatos:** los he etiquetado con lo que me diste en el encargo (director creativo argentino Dante, ingeniero de IA español, Daniel estratega de contenido, consultor de growth). **No los he verificado** — sin transcripciones no puedo confirmar ni nombres ni roles.
-
-**Nota sobre la columna "Mi socio":** `SIN EVIDENCIA` en las 10 filas no es un descuido. **El SOP no menciona en ningún momento a un socio de tu negocio.** Las 4 apariciones de la palabra "Socio" en el documento son el nombre de un tier de precio («Socio 3.500 € + 15 %»). Toda la evidencia sobre tu socio, si existe, está en las transcripciones que faltan.
+| **Ideación de contenido** | ✔ «*de esos ángulos de comunicación, salen millones de [piezas] de contenido*» · «*De 7 problemas (…) le sacamos 21 ángulos*» `[F1]` | — | ✔ «*la creación de las ideas de contenido*» `[F2]` | ✔ (parcial) vídeos y VSLs segmentados por avatar `[F3]` | Lo hace hoy; quiere soltarlo: «*me puedo dedicar más al contenido*» `[F1]` | ✔ previsto: «*va a (…) dirigir el contenido, y a coger full contenido*» `[F1]` |
+| **Guionizado** | ❌ **Se niega**: «*no me gusta trabajar con guiones*» `[F1]` | — | ✔ «*los guiones*» `[F2]` | ~ su equipo hace las VSLs `[F3]` | 🟢 **Ya construido y pagado**: 12 reels + YT#1 + VSL `[SOP §0.7]` | `NO DICHO` |
+| **Edición** | — | — | ~ **subcontrata**: «*lo podemos delegar en un editor venezolano*» `[F2]` | — | — | ✔ «*lleva un mes y pico aprendiendo a editar, va a empezar a editar él*» `[F1]` |
+| **Dirección de marca** | ✔ **es su núcleo**: «*tu marca personal es un rebranding por completo*» `[F1]` | — | ~ implícito en ideación | — | — | ✔ «*dirigir el contenido*» `[F1]` |
+| **Setting** | — | — | — | ✔ modelo propio: «*una centralita de setters*» · «*un setter que llame*» `[F3]` | — | — |
+| **Closing** | — | — | — | — | ✅ **en exclusiva**: «*estoy en Closer (…) creo que sirve de mucho que el propio fundador haga la llamada*» `[F1]` | — |
+| **Tracking / datos** | — | ✔ **su única propuesta propia**: «*el tema del tracking*» · «*aplicación interna para (…) tracking de clientes*» `[F1]` | — | ✔ «*CRM lo antes posible para trackear cada cosa*» · «*meter trackers*» `[F3]` | «*trackeo bastante manual*» · «*en proceso de crear un CRM propio*» `[F3]` | `NO DICHO` |
+| **Desarrollo** | — | ✔ rol completo `[F1]` | — | ~ CRM + «*vinculas las APIs de CRM*» `[F3]` | ✔ «*yo le doy bastante caña a Cloud Code*» `[F1]` | `NO DICHO` |
+| **Fulfillment de clientes** | ✘ propone que **lo haga el socio** `[F1]` | — | — | — | ✔ **todo**: «*hablo cada semana prácticamente dos veces con cada cliente*» `[F1]` | ✘ Dante lo propone, Joan lo asigna a contenido |
+| **Publicidad** | — | — | ⚠️ «*no me gusta meter [ads] si no funciona el contenido orgánico*» `[F2]` | ✔ «*para 20.000 sería meter meta*» `[F3]` | «*nada de ads*» · «*como no he usado Meta en mi vida*» `[F3]` | — |
 
 ---
 
-## AGUJEROS YA VISIBLES CON UNA SOLA FUENTE
+## 🔴 LOS 5 SOLAPAMIENTOS — donde pagas dos veces
 
-Estos tres no dependen de las transcripciones: el SOP, por sí solo, no asigna a nadie estas funciones.
+### 🔴 S-1 · TRACKING / CRM — triple, y es el más caro
 
-### 🔴 A-1 · Fulfillment de clientes — el agujero grande
+**Tres personas quieren construirte el mismo sistema, y tú ya lo estás construyendo.**
 
-El SOP **excluye la entrega a clientes de su propio alcance**, y lo hace a propósito:
+| Quién | Qué dice |
+|---|---|
+| **Ingeniero IA** | «*Yo diría que (…) el tema del tracking (…) es una aplicación interna para el tema de tracking de clientes*» `[F1]` — **es literalmente lo único que propuso por iniciativa propia** |
+| **Consultor growth** | «*¿No tenéis CRM? (…) Vale, pues eso sería hacerlo lo antes posible (…) **CRM lo antes posible** para trackear cada cosa*» `[F3]` |
+| **Joan** | «*estamos en proceso de crear un CRM personalizado nuestro propio entero para meter todo*» `[F3]` — y este repositorio se llama **escala-crm** |
 
-> «Se ignora deliberadamente la facturación actual, la cartera activa y cualquier cliente que no esté al corriente. El sprint se diseña como si arrancaras **hoy, desde cero**.» [SOP §0.2]
+Y ambos avisan de que es caro:
+> Ingeniero: «*El tracker es bastante tocho de hacer, ¿eh?*» `[F1]`
+> Joan sobre su propio intento anterior: «*sí que, o sea, en mucho tiempo*» `[ilegible]` `[F1]`
 
-Lo único que el documento dice sobre qué pasa después de cobrar:
+**Por qué es el más caro:** es la función más costosa en horas de las diez, la única que **dos candidatos distintos ponen como su primera prioridad**, y sobre la que **ya tienes trabajo hecho**. Si contratas a los dos sin decidir quién lo lleva, pagas dos construcciones del mismo sistema — y tiras la tuya.
 
-> «5. Llamada de onboarding de 60 min agendada en las 72 h siguientes» [SOP §3.3.4]
-
-Y lo que se promete que incluye el programa, desde el guion del VSL:
-
-> «Lo que hacemos es meternos dentro de tu negocio durante **noventa días** y construir contigo las tres cosas de las que te he hablado.» [SOP §3.2, Fase 5]
-
-> «cada entregable que produces **pasa por revisión**. Tu oferta se revisa. Tu vídeo de venta se revisa. Tu funnel se revisa. Y hay una **comunidad privada**.» [SOP §3.2, Fase 5]
-
-**Quién hace esas revisiones, con qué frecuencia y con qué carga horaria: `NO DICHO EN NINGÚN PUNTO DE LA FUENTE 4`.** Tampoco quién sostiene la comunidad privada, ni quién absorbe la garantía («seguimos trabajando contigo gratis hasta que lo consigas», [SOP §3.2, Fase 5]).
-
-**Por qué es el agujero caro:** el sprint está diseñado para cerrar 3 clientes cada 14 días [SOP §0.3]. Cada uno compra 90 días de revisiones. A ese ritmo, al final del segundo mes hay ~12 clientes activos consumiendo revisión de una persona a la que el SOP ya asigna 4,5 h/día de sprint, todas las llamadas de diagnóstico, todo el cierre y toda la configuración. **El documento no reserva ni un minuto para entregar lo vendido.**
-
-### 🔴 A-2 · Edición de reels — hay brief, no hay editor
-
-El SOP produce el brief y lo deja listo para enviar:
-
-> «12\_Brief\_Edicion.md — especificaciones técnicas, paleta, reglas de subtitulado, prohibiciones y criterio de aceptación. **Listo para enviar a dirección creativa sin tocar nada.**» [SOP §D6·B3]
-
-Pero el calendario solo te asigna a ti la grabación de los brutos («⬜ **SOLO TÚ** · 6 clips en bruto (reels 1–6)» y «(reels 7–12)», [SOP §D6·B2–B3]), y **ningún bloque del calendario de 14 días contiene la edición de los reels**. Se publican reels los días 8, 9, 10, 11, 12 y 13 [SOP §1.15] sin que exista un bloque donde se editen.
-
-### 🔴 A-3 · Dirección de marca — hay paleta, no hay criterio sostenido
-
-Existen las especificaciones (colores, tipografías, reglas de subtitulado, «corte de plano cada 4–6 segundos», «palabra clave del hook resaltada en amarillo \#F5D800» [SOP §2.2.2]) y existe un «criterio de aceptación» dentro del brief. **No existe nadie que aplique ese criterio de aceptación.** El SOP no dice quién aprueba o rechaza una pieza.
+⚠️ Añadido: el SOP da **Escala CRM por existente** (`[SOP §0.2]`) y monta el pipeline encima el Día 5. Ver `03-contradicciones.md`, X-3.
 
 ---
 
-## LO QUE FALTA POR CRUZAR
+### 🔴 S-2 · IDEACIÓN DE CONTENIDO — cuádruple
 
-En cuanto lleguen los tres `.txt`, este archivo se completa con:
+**Dante, Daniel, el consultor y tu socio** cubren todos la misma casilla.
 
-1. Las 4 columnas de candidatos, cada celda con quién dice cubrir la función y **la cita literal** que lo respalda.
-2. Marcado en 🔴 de las funciones con **dos o más ocupantes** (dinero duplicado) — que es el objetivo real de esta tabla y hoy es imposible de determinar.
-3. La columna del socio.
-4. Revisión de los agujeros A-1, A-2 y A-3: puede que alguno lo cubra un candidato y deje de ser agujero.
+- **Dante:** ángulos de comunicación a partir de una auditoría (21 ángulos de 7 problemas) `[F1]`
+- **Daniel:** «*la creación de las ideas de contenido*» — es su oferta principal `[F2]`
+- **Consultor:** vídeos de YouTube y VSLs segmentados por avatar `[F3]`
+- **Tu socio:** «*va a (…) dirigir el contenido, y a coger full contenido*» `[F1]`
+
+**Y encima el SOP ya trae 12 guiones de reels y 8 temas de YouTube construidos** `[SOP §0.7, §2.1.2]`.
+
+**Cinco fuentes para una función.** Es el solapamiento más ancho del lote.
+
+---
+
+### 🔴 S-3 · DIRECCIÓN DE MARCA — Dante contra tu propio socio
+
+**Dante** vende un rebranding completo:
+> «*hoy en día tu marca personal es un rebranding por completo, siento yo. Si quieres mejorar el posicionamiento y la recepción, es una marca línea necesaria*» `[ilegible]` `[F1]`
+
+**Tu socio** ya tiene asignada esa misma función:
+> «*va a empezar a editar él y **a dirigir el contenido**, y a coger full contenido*» `[F1]`
+
+**Por qué importa:** el rebranding de Dante no viene con precio (ver `01`, ficha 1, riesgo 8) y llega justo cuando acabas de asignarle la dirección de contenido a alguien que lleva «*un mes y pico*» aprendiendo. **O manda uno, o manda el otro.** Y si manda Dante, el mes y pico de tu socio no sirve para esto.
+
+---
+
+### 🔴 S-4 · EDICIÓN — el socio contra el editor venezolano de Daniel
+
+- **Tu socio:** «*lleva un mes y pico aprendiendo a editar, va a empezar a editar él*» `[F1]`
+- **Daniel:** «*esto lo podemos delegar en un editor venezolano (…) si necesitamos más nivel, pues evidentemente costaría más dinero*» `[F2]`
+- **Y tu editor actual está en la puerta de salida:** «*seguramente al editor lo vamos a [despedir] por el tema que no nos hace tanta falta*» `[F1]`
+
+**Por qué importa:** estás a la vez **echando** a un editor, **formando** a otro (el socio) y **escuchando** una propuesta para subcontratar a un tercero. Tres decisiones sobre la misma silla, en el mismo día.
+
+---
+
+### 🔴 S-5 · DESARROLLO — el ingeniero contra ti mismo
+
+- **Ingeniero IA:** rol completo `[F1]`
+- **Tú:** «*una aplicación que hemos creado nosotros (…) con Vercel y Superbase*» · «*yo le doy bastante caña a Cloud Code. No tengo ni puta idea de código ni nada*» `[F1]`
+- **Consultor:** también toca desarrollo: «*vinculas las APIs de CRM*», automatización de transcripción con Claude `[F3]`
+
+**Matiz honesto:** aquí el solapamiento puede ser deseable — tú quieres soltarlo («*me quitas trabajo a mí, me puedo dedicar más al contenido*» `[F1]`). **Pero el consultor no debería estar en esta casilla**, y está.
+
+---
+
+## ⚫ LOS 3 AGUJEROS — donde no hay nadie
+
+### ⚫ A-1 · FULFILLMENT — el agujero grande, y va a peor
+
+**Nadie de los cuatro candidatos lo cubre.** Ni se menciona en ninguna de las tres llamadas como algo a delegar.
+
+**Lo llevas tú, entero:**
+> «*yo hablo cada semana prácticamente dos veces con cada cliente*» `[F1]`
+> Con **9 clientes activos** `[F3]` → **~18 sesiones semanales**.
+
+**Y tu oferta lo agrava:** «*Seis meses, uno a uno **semanal***» `[F3]`. Cada cliente que cierras añade 6 meses de contacto semanal.
+
+**El plan de Dante lo tapaba… y tú ya lo has descartado sin saberlo:**
+> Dante: «*lo que debés hacer es conseguir que **tu socio se meta en la operativa** y que vos te puedas encargar de la parte importante*» `[F1]`
+> Tú, en esa misma llamada: el socio «*va a empezar a editar él y a dirigir el contenido, y a **coger full contenido***» `[F1]`
+
+🔴 **Son planes opuestos para la misma persona.** Dante quiere al socio en operativa para liberarte a ti hacia contenido. Tú quieres al socio en contenido. **Si el socio coge contenido, el fulfillment se queda sin nadie** — y tú sigues con las 18 sesiones.
+
+**Y el SOP no ayuda:** excluye el fulfillment de su alcance a propósito («*Se ignora deliberadamente (…) la cartera activa*» `[SOP §0.2]`) y no reserva ni un bloque para entregar lo vendido, mientras planifica cerrar 3 clientes nuevos cada 14 días.
+
+---
+
+### ⚫ A-2 · OUTBOUND — el motor del SOP que nadie enciende
+
+El SOP lo define como la métrica que decide si el sistema vive:
+> «*Métrica de control diario (**la única que importa**): conversaciones nuevas iniciadas hoy. **Si ese número cae bajo 25, el sistema muere***» `[SOP §0.3]`
+> «*300 DMs outbound (25/día × 12 días activos)*» `[SOP §0.3]`
+
+**Realidad:** «*2-3 mensajes al día*» — y son **entrantes**, no salientes `[F3]`.
+
+**Quién lo cubriría:** el setter, según el SOP. Pero:
+> «*el setter lo acabo de meter todavía no me ha [rodado]*» `[F3]`
+> Y su rol descrito en `[F3]` es reactivo — «*les da valor, les da análisis directos de YouTube o responde sus dudas*» — no de apertura en frío.
+
+**Ninguno de los cuatro candidatos toca esta función.** Es el agujero que hace que los otros nueve casilleros den igual.
+
+---
+
+### ⚫ A-3 · CLOSING — cubierto, pero por una sola persona y con techo declarado
+
+Técnicamente **no es un agujero**: lo cubres tú y por convicción.
+> «*creo que sirve de mucho en el negocio que el propio fundador haga la llamada*» `[F1]`
+
+**Pero el techo lo pusiste tú mismo:**
+> «*yo si tuviera **cuatro llamadas al día no me daría la vida**, pero como no es el caso, hay pocas llamadas*» `[F1]`
+
+Y el SOP fija como capacidad exactamente ese número: «*máximo 4 slots/día*» `[SOP §D4·B3]`.
+
+**Por qué lo marco:** es la única función con **cero redundancia** de toda la tabla. Si te pones enfermo una semana, el negocio no cierra nada. Y si el outbound (A-2) llegara a funcionar, el cuello de botella se traslada aquí de inmediato.
+
+---
+
+## ⚠️ LA CASILLA EN CONFLICTO
+
+### ⚠️ PUBLICIDAD — dos candidatos con criterios opuestos y un SOP que ya decidió
+
+| Quién | Postura |
+|---|---|
+| **Consultor growth** | «*para 20.000 sería **meter meta***» · cuenta nueva desde cero · ~3.000 € `[F3]` |
+| **Daniel** | «***no me gusta meter [ads] si no funciona el contenido orgánico***» `[F2]` |
+| **Tu SOP** | «*en este sprint, **retargeting sí, frío no***» · 15 €/día `[SOP §A.1, §A.2]` |
+| **Tú** | «*Full orgánico. O sea, **no hemos metido todavía nada de ads***» · «*como no he usado Meta en mi vida*» `[F3]` |
+
+**El SOP ya arbitró** y le da la razón a Daniel. Ver `03-contradicciones.md`, X-2 y X-6.
+
+**Coste real de esta casilla si contratas a los dos:** el primer mes se va en una discusión de estrategia que tu Anexo A ya resolvió por escrito, y que ninguno de los dos ha leído.
+
+---
+
+## RESUMEN VISUAL
+
+```
+FUNCIÓN                  OCUPANTES   ESTADO
+─────────────────────────────────────────────────────────
+Ideación de contenido        4+SOP   🔴 solapamiento máximo
+Tracking / datos             3       🔴 el más caro
+Desarrollo                   3       🔴 (parcialmente deseable)
+Dirección de marca           2       🔴 Dante vs socio
+Edición                      3       🔴 socio / venezolano / editor saliente
+Guionizado                   1+SOP   🟡 Daniel, sobre trabajo ya hecho
+Publicidad                   2       ⚠️ criterios opuestos
+Setting                      1       🟡 setter sin rodar, modelo en disputa
+Closing                      1       ⚫ sin redundancia, techo 4/día
+Fulfillment de clientes      0       ⚫ AGUJERO — y el plan lo empeora
+Outbound (no estaba en tu lista, pero el SOP lo exige)
+                             0       ⚫ AGUJERO — 2-3/día vs 25/día
+```
+
+**Nueve de las diez funciones que pediste están o duplicadas o vacías. La única limpia es el closing, y solo porque la haces tú solo.**

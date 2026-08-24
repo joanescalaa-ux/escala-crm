@@ -1,57 +1,91 @@
 # 00 · ESTADO DE LAS FUENTES
 
-Fecha de la extracción: **24/08/2026**.
+Extracción del **24/08/2026**. Las 4 fuentes están disponibles. **Una tiene un problema serio.**
 
-## Resumen
-
-De las 4 fuentes del encargo, **solo 1 estaba disponible**.
-
-| # | Fuente | Estado | Dónde la he buscado |
+| # | Fuente | Estado | Tamaño |
 |---|---|---|---|
-| 1 | `WhatsApp Audio 20260824 at 15.50.08.txt` (Dante + ingeniero de IA) | ❌ **NO EXISTE** | Carpeta de trabajo · repositorio `joanescalaa-ux/escala-crm` (todas las ramas y todo el historial) · Google Drive |
-| 2 | `WhatsApp Audio 20260824 at 15.50.14.txt` (Daniel) | ❌ **NO EXISTE** | ídem |
-| 3 | `WhatsApp Audio 20260824 at 17.22.48.txt` (consultor de growth) | ❌ **NO EXISTE** | ídem |
-| 4 | `SOP-Sprint-14-dias.md` | ✅ **ENCONTRADA** en Drive | `SOP_Sprint_14_Dias_Escala.md`, v1.1 |
+| 1 | `WhatsApp Audio 20260824 at 15.50.08.txt` — Dante + ingeniero de IA | ✅ Completa | 27.914 B |
+| 2 | `WhatsApp Audio 20260824 at 15.50.14.txt` — Daniel | ✅ Completa | 10.986 B |
+| 3 | `WhatsApp Audio 20260824 at 17.22.48.txt` — consultor de growth | 🔴 **CORTADA** | 24.030 B |
+| 4 | `SOP_Sprint_14_Dias_Escala.md` (Google Doc, v1.1) | ✅ Completa, 2.220 líneas | 179.833 B |
 
-## Detalle de la búsqueda
+Todas leídas desde tu Google Drive (`joanescalaa@gmail.com`).
 
-**Carpeta de trabajo** (`/home/user/escala-crm`): no contiene ningún `.txt` ni `.md`. Es el repositorio de la app Escala CRM (Next.js) recién clonado: `src/`, `package.json`, `escala-crm-v2.zip` y poco más.
+---
 
-**Repositorio**: revisado el árbol completo de la rama actual y **todo el historial de commits**. Cero archivos `.txt` o `.md` añadidos en ningún momento.
+## 🔴 Problema 1 — la fuente 3 está cortada a los 30 minutos
 
-**Google Drive**: buscado por título (`WhatsApp`, `Audio`, `transcri`, `15.50`, `17.22`, `llamada`), por tipo MIME (`audio/*`, `text/plain`) y por archivos recientes. Los únicos `.txt` de tu Drive son dos scripts de Apps Script (`CrearFormulario_Escala.gs.txt` y su v2). No hay ninguna transcripción de audio.
+El archivo termina con este aviso de TurboScribe:
 
-## Fuente 4 — cuál he usado exactamente
+> *(This file is longer than 30 minutes. Go Unlimited at https://turboscribe.ai/ to transcribe files up to 10 hours long.)*
 
-En tu Drive hay **tres documentos con el mismo nombre** `SOP_Sprint_14_Dias_Escala.md`:
+Y la última frase se interrumpe a media palabra:
+
+> «*he estado con bueno un chico que era el más peculiar de todos **te voy a dejar***»
+
+**Qué falta, con casi total seguridad:** el cierre de la llamada. Es decir, **precio final, condiciones, mes de prueba y siguiente paso** — justo lo que no aparece en su ficha.
+
+**Consecuencia práctica:** la ficha 4 de `01-fichas-candidatos.md` no es comparable con las otras tres. En concreto quedan sin respuesta:
+- ¿Acepta mes de prueba remunerado? → `NO PREGUNTADO` en el fragmento disponible.
+- ¿Situación fiscal, disponibilidad, horas? → `NO DICHO`.
+- ¿Se cerró alguna cifra al final? → desconocido.
+
+**Cómo arreglarlo:** re-transcribir ese audio completo (TurboScribe de pago, o Whisper) y avisarme. Solo hay que rehacer la ficha 4 y revisar `04-solapamientos.md`; el resto no cambia.
+
+---
+
+## 🔴 Problema 2 — faltan 4 de las 8 llamadas del día
+
+Tú mismo lo dices en la fuente 1:
+
+> «*tengo 20 minutos por llamada. **Que tengo 8 llamadas hoy***»
+> «***Tengo 3 llamadas con 3 ingenieros de IA**[PA], así decirlo*»
+
+Las transcripciones cubren **4 personas en 3 archivos**. **Faltan 4 llamadas**, de las cuales **2 son de ingenieros de IA** — es decir, los dos competidores directos del único ingeniero que sí está transcrito, y de quien dijiste en su cara que era «*el aplicante más interesante*».
+
+**Esto no invalida nada de lo extraído, pero sí lo limita:** la comparación de `04-solapamientos.md` y las fichas de `01` cubren la mitad de la jornada.
+
+---
+
+## Nota sobre la fuente 4 — cuál he usado
+
+Hay **tres documentos con el mismo nombre** `SOP_Sprint_14_Dias_Escala.md` en tu Drive:
 
 | ID | Versión | Tamaño | Modificado |
 |---|---|---|---|
-| `1rBDt9L04tlCk5vT6Axl3BtR3VnuuRZZsqhgTZE4sYG8` | v1.0 | 56.705 | 18/08/2026 14:45 |
-| `1iCcb86HJpcLbA2qqy8f-DghWydHzBHhDLpoPux-qGTE` | v1.1 | 61.978 | 19/08/2026 00:38 |
-| **`1RxXR1z3E8VMc2nJXbyigFlnRck9fFJnWHJStvePhoWo`** | **v1.1** | **179.833** | **24/08/2026 17:36** |
+| `1rBDt9L04tlCk5vT6Axl3BtR3VnuuRZZsqhgTZE4sYG8` | v1.0 | 56.705 | 18/08 14:45 |
+| `1iCcb86HJpcLbA2qqy8f-DghWydHzBHhDLpoPux-qGTE` | v1.1 | 61.978 | 19/08 00:38 |
+| **`1RxXR1z3E8VMc2nJXbyigFlnRck9fFJnWHJStvePhoWo`** | **v1.1** | **179.833** | **24/08 17:36** |
 
-**He usado la tercera**: es la más reciente, la más extensa y la única que incluye el índice de activos construidos (§0.7). Leída entera: 2.220 líneas.
+**He usado la tercera** — la más reciente y la única con el índice de activos construidos (§0.7), del que salen varias contradicciones internas. Si la buena era otra, dímelo: `03-contradicciones.md` Parte B cambiaría.
 
-Si la buena era otra, dímelo y repito la extracción — el resultado de `03-contradicciones.md` cambiaría, porque varias de las contradicciones que he encontrado están precisamente entre §0.2 y §0.7, y §0.7 solo existe en esta versión.
+---
 
-## Documento relacionado que SÍ existe (y que no he usado)
+## Documento relacionado que existe y NO he usado
 
-`26_Resumenes_Llamadas.md` — hay **dos copias** en tu Drive (`18nX16Mgp8Q9tM_iFVKTAkXrmyLIgAoOkBeY4IRBrL4g`, 24/08 14:10, y `1WNqxxBgCdstxw7QhZ1Z7yTW7slUWdeakC-vi0FL3KcE`, 24/08 15:29, esta última más larga). Contiene resúmenes de las llamadas del 24 de agosto por candidato.
+`26_Resumenes_Llamadas.md` — dos copias en tu Drive (`18nX16Mg…` 24/08 14:10 y `1WNqxxBg…` 24/08 15:29).
 
-**No lo he usado como sustituto de las transcripciones**, por tres razones:
+**No lo he usado como fuente** porque es material derivado y su propia cabecera lo dice: «*Recogido de las transcripciones, **condensado** y ordenado por tema. Se han eliminado las intervenciones de Joan*». Habiendo transcripciones completas, usar un resumen sería perder las citas literales, los `[ilegible]` y — sobre todo — **tus propias intervenciones**, que es de donde sale todo `02-datos-del-negocio.md` §7.
 
-1. Su propia cabecera dice que es material derivado: «Recogido de las transcripciones, **condensado** y ordenado por tema. Se han eliminado las intervenciones de Joan y la conversación logística».
-2. Pediste citas literales y marcar `[ilegible]`. Un resumen ya ha decidido por ti qué se cita y qué se descarta, y ha limpiado justo los errores de ASR que querías conservar.
-3. Ha eliminado tus propias intervenciones — que es exactamente de donde salen los "compromisos verbales que asumí en las llamadas" de `02-datos-del-negocio.md` §7.
+**Una discrepancia que sí conviene que sepas:** ese documento etiqueta a **Daniel Suárez como "Director creativo"** y a **Dante Rodríguez** también como "Director creativo". Tú me describiste a Daniel como *estratega de contenido*. **En la transcripción de Daniel nadie dice el nombre del rol**, ni él ni tú. Queda como `NO DICHO` en su ficha.
 
-Si quieres que tire de él como fuente provisional mientras aparecen los audios, lo hago sin problema, marcando cada dato como *derivado de resumen* y no como cita de transcripción.
+---
 
-## Cómo desbloquear esto
+## Calidad de las transcripciones (ASR)
 
-Cualquiera de estas dos vías:
+Las tres vienen de TurboScribe y tienen los fallos típicos. **No he corregido ninguno inventando**: donde no se entiende, hay `[ilegible]` con el fragmento literal. Los errores recurrentes que sí he podido resolver por contexto y que marco siempre:
 
-1. **Sube los tres `.txt` a la carpeta del repositorio** y dímelo. Con `git pull` los leo.
-2. **Súbelos a Google Drive** (o pásame los enlaces / IDs) y los leo desde ahí.
+| En el texto | Casi con seguridad | Dónde |
+|---|---|---|
+| «mi CEO» | mi **socio** | `[F1]` |
+| «lo vamos a **impedir**» | lo vamos a **despedir** | `[F1]` |
+| «meter **apps**» | meter **ads** | `[F2]` |
+| «Cloud» / «CLOUD» | **Claude** | `[F1]`, `[F3]` |
+| «reads» | **reels** | `[F1]`, `[F3]` |
+| «USL» / «VCL» | **VSL** | `[F2]`, `[F3]` |
+| «Superbase» | **Supabase** | `[F1]` |
+| «socio minorista» | socio **minoritario** | `[F2]` |
 
-En cuanto los tenga, completo `01`, la sección 7 de `02`, la Parte B de `03` y las 5 columnas que faltan de `04`. La parte del SOP ya está hecha y no hay que repetirla.
+**Turnos de habla mal atribuidos:** los hay, sobre todo en `[F3]`, donde largos tramos vienen sin separación entre el consultor y tú. Cuando la atribución no era segura, lo digo en la cita.
+
+**Dos nombres que el ASR destroza y que quedan sin resolver:** el del ingeniero de IA (aparece como «John» y como «Vivan») y el del consultor de growth (nunca se pronuncia). Ambos `NO DICHO` en sus fichas.
